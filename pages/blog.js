@@ -1,11 +1,10 @@
 import Link from "next/link";
 import React from "react";
 
-const blog = (props) => {
+const blog = () => {
   return (
     <div>
       <h1>Hello Blog World! of</h1>
-      <Link href="/">Home</Link>
     </div>
   );
 };
@@ -37,13 +36,13 @@ const blog = (props) => {
 // }
 
 // generates the page on build time (just like Gatsby).
-export function getStaticProps() {
-  return {
-    props: {
-      meetups: [{ title: "Hello world!" }],
-    },
-    revalidate: 3600,
-  };
-}
+// export function getStaticProps() {
+//   return {
+//     props: {
+//       meetups: [{ title: "Hello world!" }],
+//     },
+//     revalidate: 3600,
+//   };
+// }
 
 export default blog;
